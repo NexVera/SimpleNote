@@ -1,6 +1,7 @@
 package com.example.simplenote.domain.repository
 
-import com.example.simplenote.data.data_source.local.Note
+
+import com.example.simplenote.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
 interface NoteRepository {
@@ -9,6 +10,4 @@ interface NoteRepository {
     suspend fun deleteNote(note: Note)
 
     fun getNotes(): Flow<List<Note>>
-
-    suspend fun getNoteById(id: Int): Note?
 }

@@ -1,10 +1,12 @@
-package com.example.simplenote.data.data_source.local
+package com.example.simplenote.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.example.simplenote.data.local.dao.NoteDao
+import com.example.simplenote.data.local.entity.NoteEntity
 
 @Database(
-    entities = [Note::class],
+    entities = [NoteEntity::class],
     version = 1
 )
 abstract class NoteDatabase: RoomDatabase() {

@@ -2,7 +2,7 @@ package com.example.simplenote.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.simplenote.data.data_source.local.NoteDatabase
+import com.example.simplenote.data.local.NoteDatabase
 import com.example.simplenote.data.repository.NoteRepositoryImpl
 import com.example.simplenote.domain.repository.NoteRepository
 import dagger.Module
